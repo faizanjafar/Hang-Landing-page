@@ -1,0 +1,17 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "noFallthroughCasesInSwitch": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "jsx": "react-jsx"
+    }
+}
