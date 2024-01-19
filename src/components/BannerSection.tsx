@@ -108,7 +108,7 @@ const BannerSection1 = () => {
             HeaderSlideWrapper.style.top = `0`;
           }
     
-          if (scrollPosition > 1600) {
+          if (scrollPosition > 800) {
             images.map((item) => {
               item.referance.current!.style.opacity = `${frame / 160}`;
               const transform = item.getTransform(frame);
