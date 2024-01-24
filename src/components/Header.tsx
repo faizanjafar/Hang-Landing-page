@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <header>
-      <div className="flex gap-4">
+      <div
+        className="menu_icon md:hidden block cursor-pointer"
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        <i className={`fa-solid ${showMenu ? "fa-times" : "fa-bars"} text-2xl`}></i>
+      </div>
+      <div
+        className={`md:flex gap-4 hidden nav_menu ${
+          showMenu ? "active" : "null"
+        }`}
+      >
         <p className="text-base text-black font-bold cursor-pointer hover:underline">
           Blog
         </p>

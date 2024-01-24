@@ -9,7 +9,7 @@ const Banner = () => {
       >
         Loyalty members live
       </h3>
-      <h2 className="text-[#170e2b] text-9xl font-semibold">2,300,000+</h2>
+      <h2 className="text-[#170e2b] xl:text-9xl lg:text-7xl font-semibold text-6xl">2,300,000+</h2>
     </section>
   );
 };

@@ -48,30 +48,36 @@ const App = () => {
             style={{ backgroundColor: item.color }}
           >
             <div className={`stack-card_component bg-[${item.color}]`}>
-              <div className="flex flex-col justify-between items-center h-full">
-                <div className="flex flex-col justify-center items-center">
-                  <h2 className="text-[40px] mb-10 w-[70%] bold text-center leading-tight">
+              <div className="flex flex-col justify-between items-center md:h-full h-[80vh]">
+                <div className="flex flex-col justify-center text-center items-center w-11/12">
+                  <h2 className="md:text-[40px] sm:text-[30px] text-[30px] mb-10 md:w-[70%] sm:[80%] bold text-center leading-tight">
                     {item.heading}
                   </h2>
                   <p className="text-base font-normal text-black pb-12">
                     {item.text}
                   </p>
                 </div>
-                <img className="max-w-[60vw]" src={item.image} alt="" />
+                <img
+                  className="lg:max-w-[60vw] sm:w-full"
+                  src={item.image}
+                  alt=""
+                />
               </div>
             </div>
           </div>
         ))}
       </section>
       <section className="mt-20">
-        <div className="container mx-auto w-2/3">
+        <div className="container mx-auto xl:w-2/3 lg:w-4/5">
           <div className="flex justify-center items-center flex-col gap-1 pb-12">
-            <h3 className="text-[#170e2b] font-bold text-3xl">Mix & match</h3>
+            <h3 className="text-[#170e2b] font-bold sm:text-5xl text-3xl">
+              Mix & match
+            </h3>
             <p className="text-base font-normal text-black">
               program features with ease
             </p>
           </div>
-          <div className="flex gap-6 mb-6">
+          <div className="flex flex-wrap lg:flex-nowrap gap-6 mb-6 lg:justify-start justify-center">
             <Card
               color1="#4ef19e"
               heading1="Minigames"
@@ -85,7 +91,7 @@ const App = () => {
               style2="text-black"
             />
           </div>
-          <div className="flex gap-6 mb-6 flex-row-reverse">
+          <div className="flex flex-wrap lg:flex-nowrap gap-6 mb-6 flex-row-reverse lg:justify-start justify-center">
             <Card
               color1="#5640e8"
               heading1="Drops & exclusive offers"
@@ -100,8 +106,8 @@ const App = () => {
               style2="text-white"
             />
           </div>
-          <div className="bg-[#4ef19e] rounded-lg p-8 flex justify-between items-start">
-            <div className="flex items-start justify-start flex-col text-start w-[30%] gap-2">
+          <div className="bg-[#4ef19e] md:w-full w-11/12 md:m-0 mx-auto rounded-lg p-8 flex justify-between items-start flex-wrap">
+            <div className="flex items-start justify-start flex-col text-start md:w-[30%] w-11/12 gap-2">
               <h4 className="text-xl font-semibold text-black">
                 Drops & exclusive offers
               </h4>
@@ -110,7 +116,11 @@ const App = () => {
                 over quantity and duration
               </p>
             </div>
-            <div className="w-3/5" data-aos="fade-up" data-aos-duration="800">
+            <div
+              className="md:w-3/5 w-11/12"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <img src="/Image/card/card5.png" alt="" />
             </div>
           </div>
@@ -120,11 +130,11 @@ const App = () => {
         </div>
       </section>
       <section className="bg-[#1a0251] mt-20 py-32">
-        <h2 className="text-white font-semibold text-5xl text-center pb-24">
+        <h2 className="text-white font-semibold sm:text-5xl text-3xl text-center pb-24">
           Effortless set-up & <br /> management
         </h2>
-        <div className="container mx-auto w-2/3">
-          <div className="flex gap-6 mb-6">
+        <div className="container mx-auto xl:w-2/3 lg:w-4/5">
+          <div className="flex flex-wrap lg:flex-nowrap gap-6 mb-6 lg:justify-start justify-center">
             <Card
               color1=""
               heading1="Program design support"
@@ -139,7 +149,7 @@ const App = () => {
               secondCard={true}
             />
           </div>
-          <div className="flex gap-6 mb-6 flex-row-reverse">
+          <div className="flex flex-wrap lg:flex-nowrap gap-6 lg:justify-start justify-center mb-6 flex-row-reverse">
             <Card
               color1=""
               heading1="Drops & exclusive offers"
@@ -159,8 +169,8 @@ const App = () => {
       </section>
       <Banner />
       <section className="bg-[#e9e6f6] py-32" id="contact">
-        <div className="container mx-auto flex justify-between items-start w-[70%]">
-          <div className="w-2/5 flex-col flex gap-3">
+        <div className="container mx-auto flex flex-wrap justify-start items-start xl:w-[70%] lg:w-11/12 lg:gap-0 gap-12">
+          <div className="lg:w-2/5 sm:w-11/12 w-11/12 flex-col flex gap-3 lg:m-0 mx-auto">
             <h2 className="text-6xl font-semibold text-[#170e2b]">
               Let’s talk
             </h2>
@@ -169,7 +179,7 @@ const App = () => {
               an existing one, we’d love to connect.
             </p>
           </div>
-          <div className="w-1/2" >
+          <div className="lg:w-1/2 sm:w-11/12 w-11/12 m-auto">
             <Form />
           </div>
         </div>

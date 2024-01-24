@@ -189,7 +189,7 @@ const BannerSection1 = () => {
         </h1>
       </div>
       <div
-        className="fixed top-[25%] bg-transparent left-1/2 transform -translate-x-1/2 h-[40rem] w-[40rem]"
+        className="fixed top-[25%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[40rem] md:w-[40rem] h-[30rem] w-[30rem]"
         ref={lottieRef}
       ></div>
     </div>

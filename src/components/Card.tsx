@@ -30,7 +30,7 @@ const Card = ({
   return (
     <>
       <div
-        className={`w-2/5 bg-[${color1}] flex flex-col p-8 rounded-lg ${
+        className={`lg:w-2/5 w-11/12 bg-[${color1}] flex flex-col p-8 rounded-lg ${
           secondCard ? "feature_card" : ""
         }`}
       >
@@ -45,7 +45,7 @@ const Card = ({
         </div>
       </div>
       <div
-        className={`w-3/5 bg-[#170f2d] flex flex-col justify-between px-8 pt-8 rounded-lg ${
+        className={`lg:w-3/5 w-11/12 bg-[#170f2d] flex flex-col justify-between px-8 pt-8 rounded-lg ${
             secondCard ? 'feature_card' : ''
           }`}
       >

@@ -41,7 +41,7 @@ const slideItem = [
 
 const Carousal = () => {
   return (
-    <div className="slider">
+    <div className="slider xl:w-[1250px] lg:w-[1000px] md:w-[700px] sm:w-[500px]">
       <div className="slide-track">
         {slideItem.map((item, index) => (
           <div className="slide" key={index}>
