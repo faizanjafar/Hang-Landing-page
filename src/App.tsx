@@ -8,6 +8,7 @@ import Banner from "./components/Banner";
 import Header from "./components/Header";
 import BannerSection from "./components/BannerSection";
 import Card from "./components/Card";
+import Marquee from "react-fast-marquee";
 
 const App = () => {
   useEffect(() => {
@@ -29,10 +30,59 @@ const App = () => {
       text: "Make loyalty multiplayer with a wide variety of social features",
     },
     {
+      image: "",
+      slide: true,
+      color: "#150044",
+      heading: "The first omni-channel solution in loyalty",
+      text: "Give your customers a connected journey across all of your touch-points with our ecosystem of out-of-the-box integrations.",
+    },
+    {
       image: "/Image/section1/section3.png",
       color: "#93d4f4",
       heading: "Turn your customers into a community",
       text: "Make loyalty multiplayer with a wide variety of social features",
+    },
+  ];
+
+  const marqueeImage = [
+    {
+      image: "/Image/card/shopify.png",
+    },
+    {
+      image: "/Image/card/marq.png",
+    },
+    {
+      image: "/Image/card/marq2.png",
+    },
+    {
+      image: "/Image/card/twitter.png",
+    },
+    {
+      image: "/Image/card/discord.png",
+    },
+    {
+      image: "/Image/card/marq2.png",
+    },
+    {
+      image: "/Image/card/shopify.png",
+    },
+    {
+      image: "/Image/card/marq.png",
+    },
+    {
+      image: "/Image/card/twitter.png",
+    },
+    {
+      image: "/Image/card/discord.png",
+    },
+    {
+      image: "/Image/card/marq.png",
+    },
+    {
+      image: "/Image/card/marq2.png",
+    },
+    {
+      image: "/Image/card/discord.png",
     },
   ];
 
@@ -50,13 +100,60 @@ const App = () => {
             <div className={`stack-card_component bg-[${item.color}]`}>
               <div className="flex flex-col justify-between items-center md:h-full h-[80vh]">
                 <div className="flex flex-col justify-center text-center items-center w-11/12">
-                  <h2 className="md:text-[40px] sm:text-[30px] text-[30px] mb-10 md:w-[70%] sm:[80%] bold text-center leading-tight">
+                  <h2
+                    className={`md:text-[40px] sm:text-[30px] text-[30px] mb-10 md:w-[70%] sm:[80%] bold text-center leading-tight ${
+                      item.slide && "text-white"
+                    }`}
+                  >
                     {item.heading}
                   </h2>
-                  <p className="text-base font-normal text-black pb-12">
+                  <p
+                    className={`text-base font-normal ${
+                      item.slide && "text-white pb-36"
+                    } text-black pb-12`}
+                  >
                     {item.text}
                   </p>
                 </div>
+                {item.slide && (
+                  <>
+                    <div className="stack-card_centre-logo">
+                      <img src="/Image/card/white_logo.svg" alt="" />
+                    </div>
+                    <div className="scroll_images_1">
+                      <Marquee gradient={false} speed={20} direction="right">
+                        {marqueeImage.map((item, index) => (
+                          <div
+                            key={index}
+                            className="border border-[#21333c] md:w-[15em] w-[8em] flex justify-center items-center aspect-square"
+                          >
+                            <img
+                              src={item.image}
+                              alt=""
+                              className="aspect-square md:w-[5rem] w-[3rem] max-w-full"
+                            />
+                          </div>
+                        ))}
+                      </Marquee>
+                    </div>
+                    <div className="scroll_images_2">
+                      <Marquee gradient={false} speed={20} direction="left">
+                        {marqueeImage.map((item, index) => (
+                          <div
+                            key={index}
+                            className="border border-[#21333c] md:w-[15em] w-[8em] flex justify-center items-center aspect-square"
+                          >
+                            <img
+                              src={item.image}
+                              alt=""
+                              className="aspect-square md:w-[5rem] w-[3rem] max-w-full"
+                            />
+                          </div>
+                        ))}
+                      </Marquee>
+                    </div>
+                  </>
+                )}
                 <img
                   className="lg:max-w-[60vw] sm:w-full"
                   src={item.image}
@@ -101,7 +198,7 @@ const App = () => {
               color2="#b2abff"
               heading2="Order ahead"
               text2="Modern order ahead with loyalty integrated by default"
-              image2="/Image/card/card2.png"
+              image2="/Image/card/card_2.png"
               style1="text-white"
               style2="text-white"
             />

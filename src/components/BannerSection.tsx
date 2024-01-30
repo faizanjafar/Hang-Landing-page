@@ -75,7 +75,7 @@ const BannerSection1 = () => {
       ];
 
     useEffect(() => {
-        var animDuration = 1000;
+        var animDuration = 800;
         const anim = lottie.loadAnimation({
           container: lottieRef.current!,
           renderer: "svg",
@@ -103,12 +103,12 @@ const BannerSection1 = () => {
             HeaderSlideWrapper.style.marginTop = `120vh`;
             HeaderSlideWrapper.style.opacity = `0`;
           } else {
-            HeaderSlideWrapper.style.marginTop = `88vh`;
+            HeaderSlideWrapper.style.marginTop = `85vh`;
             HeaderSlideWrapper.style.opacity = `1`;
             HeaderSlideWrapper.style.top = `0`;
           }
     
-          if (scrollPosition > 800) {
+          if (scrollPosition > 650) {
             images.map((item) => {
               item.referance.current!.style.opacity = `${frame / 160}`;
               const transform = item.getTransform(frame);
@@ -129,7 +129,7 @@ const BannerSection1 = () => {
             headerMainHeadingWrapper!.style.opacity = `1`;
           }
     
-          if (scrollPosition > 2500) {
+          if (scrollPosition > 1800) {
             const transform = `translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) scale(${
               frame / 700
             }, ${frame / 700}) `;
@@ -182,14 +182,14 @@ const BannerSection1 = () => {
     <div className="w-full">
       <div className="header_heading">
         <h1
-          className="header_main_heading flex justify-center pt-24"
+          className="header_main_heading flex justify-center pt-28"
           ref={headerMainHeading}
         >
           Loyalty Reimagined
         </h1>
       </div>
       <div
-        className="fixed top-[25%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[40rem] md:w-[40rem] h-[30rem] w-[30rem]"
+        className="fixed md:top-[15%] top-[20%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[40rem] md:w-[40rem] h-[30rem] w-[30rem]"
         ref={lottieRef}
       ></div>
     </div>

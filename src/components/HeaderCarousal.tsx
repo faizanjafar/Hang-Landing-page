@@ -1,4 +1,4 @@
-import React from "react";
+import Marquee from "react-fast-marquee";
 
 const logo = [
   {
@@ -36,22 +36,26 @@ const logo = [
   },
   {
     image: "/Image/c_logo1.svg",
-  },{
+  },
+  {
     image: "/Image/c_brand10.svg",
   },
 ];
 
 const HeaderCarousal = () => {
   return (
-    <div className="slider2">
-      <div className="slide-track">
+    <>
+      <Marquee
+        gradient={false}
+        speed={30}
+      >
         {logo.map((item, index) => (
-          <div className="slide" key={index}>
+          <div className="p-9" key={index}>
             <img src={item.image} alt="" className="aspect-square w-[4.5rem]" />
           </div>
         ))}
-      </div>
-    </div>
+      </Marquee>
+    </>
   );
 };
 

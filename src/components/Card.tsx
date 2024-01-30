@@ -30,11 +30,11 @@ const Card = ({
   return (
     <>
       <div
-        className={`lg:w-2/5 w-11/12 bg-[${color1}] flex flex-col p-8 rounded-lg ${
+        className={`lg:w-2/5 w-11/12 bg-[${color1}] flex flex-col rounded-lg ${
           secondCard ? "feature_card" : ""
         }`}
       >
-        <div className="flex items-start justify-start flex-col text-start gap-2 pb-12">
+        <div className="flex items-start justify-start flex-col text-start gap-2 pl-8 pt-8">
           <h4 className={`text-xl font-semibold ${style2}`}>{heading1}</h4>
           <p className={`text-base font-normal text-black ${style2}`}>
             {text1}
@@ -45,11 +45,11 @@ const Card = ({
         </div>
       </div>
       <div
-        className={`lg:w-3/5 w-11/12 bg-[#170f2d] flex flex-col justify-between px-8 pt-8 rounded-lg ${
+        className={`lg:w-3/5 w-11/12 bg-[#170f2d] flex flex-col justify-between rounded-lg ${
             secondCard ? 'feature_card' : ''
           }`}
       >
-        <div className="flex items-start justify-start flex-col text-start gap-2 pb-12">
+        <div className="flex items-start justify-start flex-col text-start gap-2 pb-12 pl-8 pt-8">
           <h4 className={`text-xl font-semibold ${style1}`}>{heading2}</h4>
           <p className={`text-base font-normal ${style1}`}>{text2}</p>
         </div>

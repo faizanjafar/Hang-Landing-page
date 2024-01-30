@@ -23,7 +23,7 @@ const Header = () => {
         </p>
       </div>
       <div>
-        <img src="/Image/band_logo.svg" alt="" />
+        <img src="/Image/card/logo.svg" alt="" />
       </div>
       <div>
         <button className="py-2 px-4 rounded-full text-sm text-black bg-white font-bold shadow-md hover:shadow-lg border-none">
