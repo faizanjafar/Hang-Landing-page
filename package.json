@@ -7,9 +7,11 @@
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "0.1.4",
     "@lottiefiles/lottie-player": "1.0.3",
+    "@types/gsap": "^3.0.0",
     "@types/react-lottie": "1.2.5",
     "@types/throttle-debounce": "2.1.0",
     "aos": "^2.3.4",
+    "gsap": "^3.12.5",
     "lottie-web": "5.7.8",
     "prop-types": "15.7.2",
     "react": "17.0.2",

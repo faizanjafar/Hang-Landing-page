@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./styles.css";
 import Carousal from "./components/Carousal";
 import AOS from "aos";
@@ -8,7 +8,7 @@ import Banner from "./components/Banner";
 import Header from "./components/Header";
 import BannerSection from "./components/BannerSection";
 import Card from "./components/Card";
-import Marquee from "react-fast-marquee";
+import StackCard from "./components/StackCard";
 
 const App = () => {
   useEffect(() => {
@@ -19,12 +19,14 @@ const App = () => {
   const stackCard = [
     {
       image: "/Image/section1/section1.png",
+      slide: false,
       color: "#5bfe7f",
       heading: "Modern game design, no coding required",
       text: "Create the most incentivizing experience in loyalty with our expansive inventory of program building blocks.",
     },
     {
       image: "/Image/section1/section2.png",
+      slide: false,
       color: "#5640e8",
       heading: "Turn your customers into a community",
       text: "Make loyalty multiplayer with a wide variety of social features",
@@ -38,6 +40,7 @@ const App = () => {
     },
     {
       image: "/Image/section1/section3.png",
+      slide: false,
       color: "#93d4f4",
       heading: "Turn your customers into a community",
       text: "Make loyalty multiplayer with a wide variety of social features",
@@ -90,80 +93,7 @@ const App = () => {
     <>
       <Header />
       <BannerSection />
-      <section>
-        {stackCard.map((item, index) => (
-          <div
-            key={index}
-            className="stack_card_sticky_strip shadow_lg"
-            style={{ backgroundColor: item.color }}
-          >
-            <div className={`stack-card_component bg-[${item.color}]`}>
-              <div className="flex flex-col justify-between items-center md:h-full h-[80vh]">
-                <div className="flex flex-col justify-center text-center items-center w-11/12">
-                  <h2
-                    className={`md:text-[40px] sm:text-[30px] text-[30px] mb-10 md:w-[70%] sm:[80%] bold text-center leading-tight ${
-                      item.slide && "text-white"
-                    }`}
-                  >
-                    {item.heading}
-                  </h2>
-                  <p
-                    className={`text-base font-normal ${
-                      item.slide && "text-white pb-36"
-                    } text-black pb-12`}
-                  >
-                    {item.text}
-                  </p>
-                </div>
-                {item.slide && (
-                  <>
-                    <div className="stack-card_centre-logo">
-                      <img src="/Image/card/white_logo.svg" alt="" />
-                    </div>
-                    <div className="scroll_images_1">
-                      <Marquee gradient={false} speed={20} direction="right">
-                        {marqueeImage.map((item, index) => (
-                          <div
-                            key={index}
-                            className="border border-[#21333c] md:w-[15em] w-[8em] flex justify-center items-center aspect-square"
-                          >
-                            <img
-                              src={item.image}
-                              alt=""
-                              className="aspect-square md:w-[5rem] w-[3rem] max-w-full"
-                            />
-                          </div>
-                        ))}
-                      </Marquee>
-                    </div>
-                    <div className="scroll_images_2">
-                      <Marquee gradient={false} speed={20} direction="left">
-                        {marqueeImage.map((item, index) => (
-                          <div
-                            key={index}
-                            className="border border-[#21333c] md:w-[15em] w-[8em] flex justify-center items-center aspect-square"
-                          >
-                            <img
-                              src={item.image}
-                              alt=""
-                              className="aspect-square md:w-[5rem] w-[3rem] max-w-full"
-                            />
-                          </div>
-                        ))}
-                      </Marquee>
-                    </div>
-                  </>
-                )}
-                <img
-                  className="lg:max-w-[60vw] sm:w-full"
-                  src={item.image}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
+      <StackCard stackCard={stackCard} marqueeImage={marqueeImage} />
       <section className="mt-20">
         <div className="container mx-auto xl:w-2/3 lg:w-4/5">
           <div className="flex justify-center items-center flex-col gap-1 pb-12">

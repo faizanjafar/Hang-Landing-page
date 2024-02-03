@@ -14,13 +14,13 @@ const BannerSection1 = () => {
         {
           url: "/Image/img1.png",
           referance: useRef<HTMLImageElement>(null),
-          getTransform: (frame: any) => `translate3d(${frame / 40}em, -${frame / 10}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 15}deg) skew(0deg, 0deg)`,
-          defaultTransform: `translate3d(0em, -2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
+          getTransform: (frame: any) => `translate3d(${frame / 60}em, -${frame / 15}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 10}deg) skew(0deg, 0deg)`,
+          defaultTransform: `translate3d(0em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img2.png",
           referance: useRef<HTMLImageElement>(null),
-          getTransform: (frame: any) => `translate3d(${frame / 40}em, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
+          getTransform: (frame: any) => `translate3d(${frame / 60}em, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
@@ -33,38 +33,38 @@ const BannerSection1 = () => {
         {
           url: "/Image/img4.png",
           referance: useRef<HTMLImageElement>(null),
-          getTransform: (frame: any) => `translate3d(${frame / 17}em, -${frame / 19}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 10}deg) skew(0deg, 0deg)`,
+          getTransform: (frame: any) => `translate3d(${frame / 27}em, -${frame / 30}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 10}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img5.png",
           referance: useRef<HTMLImageElement>(null),
-          getTransform: (frame: any) => `translate3d(-${frame / 14}em, ${frame / 60}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 20}deg) skew(0deg, 0deg)`,
-          defaultTransform: `translate3d(-2em, 1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
+          getTransform: (frame: any) => `translate3d(-${frame / 34}em, ${frame / 70}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 20}deg) skew(0deg, 0deg)`,
+          defaultTransform: `translate3d(-1em, 1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img6.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 8}em, -${frame / 70}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
-          defaultTransform: `translate3d(-3em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
+          defaultTransform: `translate3d(-1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img7.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 15}em, -${frame / 8}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
-          defaultTransform: `translate3d(-4em, -3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
+          defaultTransform: `translate3d(-1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img4.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 8}em, -${frame / 15}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 14}deg) skew(0deg, 0deg)`,
-          defaultTransform: `translate3d(-3em, -2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skew(0deg, 0deg)`
+          defaultTransform: `translate3d(-1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img5.png",
           referance: useRef<HTMLImageElement>(null),
-          getTransform: (frame: any) => `translate3d(-${frame / 7}em, -${frame / 30}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 10}deg) skew(0deg, 0deg)`,
-          defaultTransform: `translate3d(-3em, -2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skew(0deg, 0deg)`
+          getTransform: (frame: any) => `translate3d(-${frame / 10}em, -${frame / 30}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 10}deg) skew(0deg, 0deg)`,
+          defaultTransform: `translate3d(-11em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skew(0deg, 0deg)`
         },
         {
           url: "/Image/img6.png",
@@ -108,7 +108,7 @@ const BannerSection1 = () => {
             HeaderSlideWrapper.style.top = `0`;
           }
     
-          if (scrollPosition > 650) {
+          if (scrollPosition > 700) {
             images.map((item) => {
               item.referance.current!.style.opacity = `${frame / 160}`;
               const transform = item.getTransform(frame);
@@ -131,8 +131,8 @@ const BannerSection1 = () => {
     
           if (scrollPosition > 1800) {
             const transform = `translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) scale(${
-              frame / 700
-            }, ${frame / 700}) `;
+              frame / 1000
+            }, ${frame / 1000}) `;
             headerTextWrapper.style.transform = transform;
             headerTextWrapper.style.opacity = `1`;
             lottieRef.current!.style.display = "none";
@@ -141,7 +141,7 @@ const BannerSection1 = () => {
             lottieRef.current!.style.display = "block";
           }
 
-          if (scrollPosition > 4500) {
+          if (scrollPosition > 5000) {
             images.forEach((item) => {
               item.referance.current!.style.opacity = `0`;
             });
