@@ -5,37 +5,37 @@ const slideItem = [
     heading: "Social media integratons",
     subHeading:
       "Create a sense of exclusivity and accomplishment with status and tiers",
-    bgColor: "#5640e8",
+    bgColor: "#414141",
+  },
+  {
+    heading: "Social media integratons1",
+    subHeading:
+      "Create a sense of exclusivity and accomplishment with status and tiers",
+    bgColor: "#414141",
   },
   {
     heading: "Social media integratons",
     subHeading:
       "Create a sense of exclusivity and accomplishment with status and tiers",
-    bgColor: "#1a0251",
+    bgColor: "#414141",
   },
   {
     heading: "Social media integratons",
     subHeading:
       "Create a sense of exclusivity and accomplishment with status and tiers",
-    bgColor: "#5640e8",
+    bgColor: "#5A79ED",
   },
   {
     heading: "Social media integratons",
     subHeading:
       "Create a sense of exclusivity and accomplishment with status and tiers",
-    bgColor: "#1a0251",
+    bgColor: "#414141",
   },
   {
     heading: "Social media integratons",
     subHeading:
       "Create a sense of exclusivity and accomplishment with status and tiers",
-    bgColor: "#1a0251",
-  },
-  {
-    heading: "Social media integratons",
-    subHeading:
-      "Create a sense of exclusivity and accomplishment with status and tiers",
-    bgColor: "#5640e8",
+    bgColor: "#414141",
   },
 ];
 

@@ -185,7 +185,7 @@ const BannerSection1 = () => {
           className="header_main_heading flex justify-center pt-28"
           ref={headerMainHeading}
         >
-          Loyalty Reimagined
+          Loyalty <span className='redefined_heading mx-4'>Redefined</span> 
         </h1>
       </div>
       <div

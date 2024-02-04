@@ -36,7 +36,7 @@ const Form = () => {
         rows={5}
       ></textarea>
 
-      <button className="py-3 px-4 rounded-full bg-[#5640e8] font-extrabold text-white mt-4 hover:shadow-md">
+      <button className="py-3 px-4 rounded-full bg-[#5A79ED] font-extrabold text-white mt-4 hover:shadow-md">
         Demo
       </button>
     </form>

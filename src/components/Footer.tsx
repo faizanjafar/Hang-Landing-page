@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="flex lg:flex-nowrap flex-wrap md:flex-row flex-col-reverse  ">
-      <div className="lg:w-1/2 w-full bg-[#5640e8] min-h-[29rem] relative overflow-x-hidden">
-        <h1 className="animate_logo text-white text-5xl font-semibold">Hang</h1>
+      <div className="lg:w-1/2 w-full bg-[#5A79ED] min-h-[29rem] relative overflow-x-hidden">
+        <h1 className="animate_logo text-white text-5xl font-semibold">Loiale</h1>
       </div>
-      <div className="lg:w-1/2 w-full bg-[#170e2b] min-h-[27rem] h-ful flex justify-start items-center p-12">
+      <div className="lg:w-1/2 w-full bg-[#414141] min-h-[27rem] h-ful flex justify-start items-center p-12">
         <div className="flex flex-col gap-8">
           <ul className="flex flex-col gap-1">
             <li>

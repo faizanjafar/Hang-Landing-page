@@ -20,28 +20,28 @@ const App = () => {
     {
       image: "/Image/section1/section1.png",
       slide: false,
-      color: "#5bfe7f",
+      color: "#FFC700",
       heading: "Modern game design, no coding required",
       text: "Create the most incentivizing experience in loyalty with our expansive inventory of program building blocks.",
     },
     {
       image: "/Image/section1/section2.png",
       slide: false,
-      color: "#5640e8",
+      color: "#5A79ED",
       heading: "Turn your customers into a community",
       text: "Make loyalty multiplayer with a wide variety of social features",
     },
     {
       image: "",
       slide: true,
-      color: "#150044",
+      color: "#2312DA",
       heading: "The first omni-channel solution in loyalty",
       text: "Give your customers a connected journey across all of your touch-points with our ecosystem of out-of-the-box integrations.",
     },
     {
       image: "/Image/section1/section3.png",
       slide: false,
-      color: "#93d4f4",
+      color: "#00E8DA",
       heading: "Turn your customers into a community",
       text: "Make loyalty multiplayer with a wide variety of social features",
     },
@@ -94,7 +94,7 @@ const App = () => {
       <Header />
       <BannerSection />
       <StackCard stackCard={stackCard} marqueeImage={marqueeImage} />
-      <section className="mt-20">
+      <section className="mt-20 bg-[F8F8F8]">
         <div className="container mx-auto xl:w-2/3 lg:w-4/5">
           <div className="flex justify-center items-center flex-col gap-1 pb-12">
             <h3 className="text-[#170e2b] font-bold sm:text-5xl text-3xl">
@@ -106,11 +106,11 @@ const App = () => {
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-6 mb-6 lg:justify-start justify-center">
             <Card
-              color1="#4ef19e"
+              color1="#FFC700"
               heading1="Minigames"
               text1="Give your customers a reason to stay engaged with rewarding and brandable minigames"
               image1="/Image/card/card1.png"
-              color2="#170f2d"
+              color2="#414141"
               heading2="Paid memberships & subscriptions"
               text2="Integrate paid memberships or subscriptions instantly"
               image2="/Image/card/card2.png"
@@ -120,12 +120,12 @@ const App = () => {
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-6 mb-6 flex-row-reverse lg:justify-start justify-center">
             <Card
-              color1="#5640e8"
+              color1="#B20DFF"
               heading1="Drops & exclusive offers"
               text1="Roll out product drops and exclusive offers with full control
               over quantity and duration"
               image1="/Image/card/card1.png"
-              color2="#b2abff"
+              color2="#5A79ED"
               heading2="Order ahead"
               text2="Modern order ahead with loyalty integrated by default"
               image2="/Image/card/card_2.png"
@@ -133,7 +133,7 @@ const App = () => {
               style2="text-white"
             />
           </div>
-          <div className="bg-[#4ef19e] md:w-full w-11/12 md:m-0 mx-auto rounded-lg p-8 flex justify-between items-start flex-wrap">
+          <div className="bg-[#FFC700] md:w-full w-11/12 md:m-0 mx-auto rounded-lg p-8 flex justify-between items-start flex-wrap">
             <div className="flex items-start justify-start flex-col text-start md:w-[30%] w-11/12 gap-2">
               <h4 className="text-xl font-semibold text-black">
                 Drops & exclusive offers
@@ -156,7 +156,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#1a0251] mt-20 py-32">
+      <section className="bg-[#2312DA] mt-20 py-32">
         <h2 className="text-white font-semibold sm:text-5xl text-3xl text-center pb-24">
           Effortless set-up & <br /> management
         </h2>
@@ -195,7 +195,7 @@ const App = () => {
         </div>
       </section>
       <Banner />
-      <section className="bg-[#e9e6f6] py-32" id="contact">
+      <section className="bg-[#F8F8F8] py-32" id="contact">
         <div className="container mx-auto flex flex-wrap justify-start items-start xl:w-[70%] lg:w-11/12 lg:gap-0 gap-12">
           <div className="lg:w-2/5 sm:w-11/12 w-11/12 flex-col flex gap-3 lg:m-0 mx-auto">
             <h2 className="text-6xl font-semibold text-[#170e2b]">

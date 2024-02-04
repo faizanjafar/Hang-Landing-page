@@ -49,8 +49,10 @@ const StackCard = ({ stackCard, marqueeImage }: StackCardProps) => {
                 </div>
                 {item.slide && (
                   <>
-                    <div className="stack-card_centre-logo">
-                      <img src="/Image/card/white_logo.svg" alt="" />
+                    <div className="stack-card_centre-logo bg-[#5A79ED]">
+                      {/* <img src="/Image/card/white_logo.svg" alt="" /> */}
+                      <span className="logo_loiale logo_color">loiale</span>
+                      
                     </div>
                     <div className="scroll_images_1">
                       <Marquee gradient={false} speed={20} direction="right">

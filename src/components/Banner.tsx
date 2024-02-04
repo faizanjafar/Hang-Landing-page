@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="bg-[#ff619a] py-52 text-center">
+    <section className="bg-[#B20DFF] py-52 text-center">
       <h3
         className="text-[#170e2b] text-4xl font-semibold pb-8
         "

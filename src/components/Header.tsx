@@ -23,11 +23,15 @@ const Header = () => {
         </p>
       </div>
       <div>
-        <img src="/Image/card/logo.svg" alt="" />
+        {/* <img src="/Image/card/logo.svg" alt="" /> */}
+        <h1 className="text-2xl text-black font-bold">loiale</h1>
       </div>
       <div>
         <button className="py-2 px-4 rounded-full text-sm text-black bg-white font-bold shadow-md hover:shadow-lg border-none">
           <a href="#contact">Demo</a>
+        </button>
+        <button className="mx-4">
+          EN
         </button>
       </div>
     </header>

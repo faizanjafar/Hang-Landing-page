@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Palo Compressed Medium";
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../src/fonts/TypeUnion\ -\ Palo\ Compressed\ Medium.otf")
+  src: url("../src/fonts/Outfit-Medium.ttf")
     format("opentype");
 }
 
 @font-face {
-  font-family: "Palo Compressed Regular";
+  font-family: "Outfit";
   font-weight: 400;
-  src: url("../src/fonts/TypeUnion\ -\ Palo\ Wide\ Light.otf")
+  src: url("../src/fonts/Outfit-Regular.ttf")
     format("opentype");
 }
 
@@ -22,7 +22,7 @@ body,
 html {
   margin: 0;
   width: 100%;
-  font-family: "Palo Compressed Regular" !important;
+  font-family: "Outfit" !important;
   scroll-behavior: smooth;
 }
 
@@ -94,23 +94,26 @@ header {
 }
 
 .header_main_heading {
-  letter-spacing: -0.35rem;
+  /* letter-spacing: -0.35rem;s */
   white-space: nowrap;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(
-    280deg,
-    #4cfccd,
-    #5640e8 29%,
-    #593fff 44%,
-    #ff619a
-  );
-  -webkit-background-clip: text;
+  
   background-clip: text;
   padding-bottom: 0.625rem;
   font-size: 6.5rem;
   align-items: center;
   font-weight: 700;
 }
+.redefined_heading{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    280deg,
+    #FFC700,
+    #B20DFF,
+    #00E8DA
+  );
+}
+
 
 @media (max-width: 991px) {
   .header_main_heading {
@@ -389,4 +392,14 @@ header {
   left: 100%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+.logo_loiale{
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.15rem;
+  font-weight: bolder;
+}
+.logo_color{
+  color:#F8F8F8
 }
