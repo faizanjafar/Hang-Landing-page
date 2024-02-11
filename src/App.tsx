@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import BannerSection from "./components/BannerSection";
 import Card from "./components/Card";
 import StackCard from "./components/StackCard";
+import Marquee from "react-fast-marquee";
 
 const App = () => {
   useEffect(() => {
