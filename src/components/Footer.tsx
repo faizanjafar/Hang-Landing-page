@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex lg:flex-nowrap flex-wrap md:flex-row flex-col-reverse  ">
       <div className="lg:w-1/2 w-full bg-[#5A79ED] min-h-[29rem] relative overflow-x-hidden">
-        <h1 className="animate_logo text-white text-5xl font-semibold">Loiale</h1>
+        <h1 className="animate_logo text-white text-5xl font-semibold">loiale</h1>
       </div>
       <div className="lg:w-1/2 w-full bg-[#414141] min-h-[27rem] h-ful flex justify-start items-center p-12">
         <div className="flex flex-col gap-8">

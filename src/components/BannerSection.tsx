@@ -12,62 +12,62 @@ const BannerSection1 = () => {
 
     const images = [
         {
-          url: "/Image/img1.png",
+          url: "/Image/1.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(${frame / 60}em, -${frame / 15}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 10}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(0em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img2.png",
+          url: "/Image/2.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(${frame / 60}em, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img3.png",
+          url: "/Image/3.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 20}em, ${frame / 30}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 40}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(0em, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         
         {
-          url: "/Image/img4.png",
+          url: "/Image/4.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(${frame / 27}em, -${frame / 30}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 10}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img5.png",
+          url: "/Image/5.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 34}em, ${frame / 70}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 20}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, 1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img6.png",
+          url: "/Image/6.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 8}em, -${frame / 70}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img7.png",
+          url: "/Image/7.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 15}em, -${frame / 8}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-${frame / 20}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img4.png",
+          url: "/Image/8.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 8}em, -${frame / 15}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 14}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img5.png",
+          url: "/Image/9.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 10}em, -${frame / 30}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 10}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-11em, -1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skew(0deg, 0deg)`
         },
         {
-          url: "/Image/img6.png",
+          url: "/Image/10.png",
           referance: useRef<HTMLImageElement>(null),
           getTransform: (frame: any) => `translate3d(-${frame / 40}em, -${frame / 9}em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${frame / 20}deg) skew(0deg, 0deg)`,
           defaultTransform: `translate3d(-1em, -3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skew(0deg, 0deg)`
@@ -110,11 +110,11 @@ const BannerSection1 = () => {
     
           if (scrollPosition > 700) {
             images.map((item) => {
-              item.referance.current!.style.opacity = `${frame / 160}`;
+              item.referance.current!.style.opacity = `${frame / 120}`;
               const transform = item.getTransform(frame);
               item.referance.current!.style.transform = transform;
               item.referance.current!.style.transformStyle = 'preserve-3d';
-              item.referance.current!.style.width = `${frame / 11}em`;
+              item.referance.current!.style.width = `${frame / 10}em`;
               item.referance.current!.style.left = `45%`;
             });
           } else {
@@ -174,7 +174,7 @@ const BannerSection1 = () => {
             src={item.url}
             ref={item.referance}
             alt=""
-            className="opacity-0 transform-style-preserve-3d will-change-transform w-8rem absolute mt-20 left-[45%] top-[40%] transform -translate-x-1/2 -translate-y-1/2"
+            className="opacity-0 transform-style-preserve-3d will-change-transform absolute mt-20 left-[45%] top-[40%] transform -translate-x-1/2 -translate-y-1/2 rounded-2xl"
           />
         ))}
       </div>
@@ -189,7 +189,7 @@ const BannerSection1 = () => {
         </h1>
       </div>
       <div
-        className="fixed md:top-[15%] top-[20%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[40rem] md:w-[40rem] h-[30rem] w-[30rem]"
+        className="fixed md:top-[15%] top-[20%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[50rem] md:w-[80rem] h-[30rem] w-[30rem]"
         ref={lottieRef}
       ></div>
     </div>
