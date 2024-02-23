@@ -111,7 +111,7 @@ const BannerSection1 = () => {
           if (scrollPosition > 700) {
             images.map((item) => {
               item.referance.current!.style.opacity = `${frame / 120}`;
-              const transform = item.getTransform(frame);
+              const transform = item.getTransform(frame/1.05);
               item.referance.current!.style.transform = transform;
               item.referance.current!.style.transformStyle = 'preserve-3d';
               item.referance.current!.style.width = `${frame / 10}em`;
@@ -141,7 +141,7 @@ const BannerSection1 = () => {
             lottieRef.current!.style.display = "block";
           }
 
-          if (scrollPosition > 5000) {
+          if (scrollPosition > 5500) {
             images.forEach((item) => {
               item.referance.current!.style.opacity = `0`;
             });
