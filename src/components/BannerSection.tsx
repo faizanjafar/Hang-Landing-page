@@ -174,7 +174,7 @@ const BannerSection1 = () => {
             src={item.url}
             ref={item.referance}
             alt=""
-            className="opacity-0 transform-style-preserve-3d will-change-transform absolute mt-20 left-[45%] top-[40%] transform -translate-x-1/2 -translate-y-1/2 rounded-2xl"
+            className="opacity-0 transform-style-preserve-3d will-change-transform absolute mt-20 left-[45%] top-[35%] transform -translate-x-1/2 -translate-y-1/2 rounded-2xl"
           />
         ))}
       </div>
@@ -189,7 +189,7 @@ const BannerSection1 = () => {
         </h1>
       </div>
       <div
-        className="fixed md:top-[15%] top-[20%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[50rem] md:w-[80rem] h-[30rem] w-[30rem]"
+        className="fixed md:top-[10%] top-[20%] bg-transparent left-1/2 transform -translate-x-1/2 md:h-[45rem] md:w-[60rem] h-[30rem] w-[30rem]"
         ref={lottieRef}
       ></div>
     </div>
