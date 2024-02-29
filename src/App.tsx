@@ -94,7 +94,7 @@ const App = () => {
       <Header />
       <BannerSection />
       <StackCard stackCard={stackCard} marqueeImage={marqueeImage} />
-      <section className="mt-20 bg-[F8F8F8]">
+      <section className="mt-36 bg-[F8F8F8]">
         <div className="container mx-auto xl:w-2/3 lg:w-4/5">
           <div className="flex justify-center items-center flex-col gap-1 pb-12">
             <h3 className="text-[#170e2b] font-bold sm:text-5xl text-3xl">

@@ -75,7 +75,7 @@ const BannerSection1 = () => {
       ];
 
     useEffect(() => {
-        var animDuration = 800;
+        var animDuration = 600;
         const anim = lottie.loadAnimation({
           container: lottieRef.current!,
           renderer: "svg",
@@ -108,7 +108,7 @@ const BannerSection1 = () => {
             HeaderSlideWrapper.style.top = `0`;
           }
     
-          if (scrollPosition > 700) {
+          if (scrollPosition > 500) {
             images.map((item) => {
               item.referance.current!.style.opacity = `${frame / 120}`;
               const transform = item.getTransform(frame/1.05);
@@ -141,7 +141,7 @@ const BannerSection1 = () => {
             lottieRef.current!.style.display = "block";
           }
 
-          if (scrollPosition > 5500) {
+          if (scrollPosition > 5000) {
             images.forEach((item) => {
               item.referance.current!.style.opacity = `0`;
             });
@@ -165,7 +165,7 @@ const BannerSection1 = () => {
     <div className="h-[700vh] relative">
     <div className="header_image_sticky" ref={headerRef}>
       <div className="header_text_wrapper" ref={headerText}>
-        <div className='text-3xl font-bold text-black'>A radically new type of loyalty experience</div>
+        <div className='text-4xl font-bold text-black'>Get loyalty superpowers</div>
       </div>
       <div className="header_image_grid w_layout_grid">
         {images.map((item, index) => (

@@ -348,7 +348,7 @@ header {
   z-index: 2;
   width: 23em;
   aspect-ratio: 1 / 1;
-  background-color: #5640e8;
+  background-color: #5A79ED;
   border-radius: 100rem;
   justify-content: center;
   align-items: center;
@@ -356,39 +356,28 @@ header {
   padding-right: 3em;
   display: flex;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 2px 300px #5341e7, 0 4px 162px 112px rgba(83, 65, 231, .25), inset 0 0 80px rgba(217, 211, 255, .4);
+  box-shadow: 0 2px 300px #5A79ED, 0 4px 162px 112px rgba(83, 65, 231, .25), inset 0 0 80px rgba(217, 211, 255, .4);
 }
 
-@media (max-width: 600px) {
-  .stack-card_centre-logo {
-    width: 14em;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-  .stack-card_centre-logo img {
-    width: 70%;
-  }
+.stack-card_centre-logo h1 {
+  font-size: 10rem;
 }
 
 
 .scroll_images_1 {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 0%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .scroll_images_2 {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 100%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -402,4 +391,25 @@ header {
 }
 .logo_color{
   color:#F8F8F8
+}
+
+/* max and min both */
+@media (min-width: 350px ) and (max-width: 600px) {
+  .stack-card_centre-logo {
+    width: 13em;
+    top: 73%;
+  }
+
+  .stack-card_centre-logo img {
+    width: 70%;
+  }
+
+  .scroll_images_1,
+  .scroll_images_2 {
+    top: 73%;
+  }
+
+  .stack-card_centre-logo h1 {
+    font-size: 6rem;
+  }
 }

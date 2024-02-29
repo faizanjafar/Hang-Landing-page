@@ -31,14 +31,14 @@ const StackCard = ({ stackCard, marqueeImage }: StackCardProps) => {
             <div className="flex flex-col justify-between items-center md:h-full h-[80vh]">
               <div className="flex flex-col justify-center text-center items-center w-11/12">
                 <h2
-                  className={`md:text-[40px] sm:text-[30px] text-[30px] mb-10 md:w-[70%] sm:[80%] bold text-center leading-tight ${
+                  className={`md:text-[50px] sm:text-[30px] text-[30px] mb-10 md:w-[70%] sm:[80%] bold text-center leading-tight ${
                     item.slide && "text-white"
                   }`}
                 >
                   {item.heading}
                 </h2>
                 <p
-                  className={`text-base font-normal ${
+                  className={`text-lg font-normal ${
                     item.slide && "text-white pb-36"
                   } text-black pb-12`}
                 >
@@ -48,7 +48,9 @@ const StackCard = ({ stackCard, marqueeImage }: StackCardProps) => {
               {item.slide && (
                 <>
                   <div className="stack-card_centre-logo">
-                    <img src="/Image/card/white_logo.svg" alt="" />
+                    <h1 className="bold text-white">J</h1>
+                    
+                    {/* <img src="/Image/card/white_logo.svg" alt="" /> */}
                   </div>
                   <div className="scroll_images_1">
                     <Marquee gradient={false} speed={20} direction="right">
